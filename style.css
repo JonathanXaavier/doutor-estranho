@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'karla' ;
+    src: url(fontes/Karla-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --font-conteudo: 'karla';
+    --font-2: Verdana, Geneva, Tahoma, sans-serif; 
+}
+body{
+    padding: 60px 90px 40px 90px ;
+    background-image: linear-gradient(90deg, #000, #000D 35%, #0000), url(imagens/background.png);
+    background-position: right;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 1s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+nav a:hover{
+    background-color: red;
+    padding: 5px;
+}
+main{
+    height: 467px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+#t1{
+    font-family: var(--font-conteudo);
+    font-size: 1.9em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+#t2{
+    font-family: var(--font-conteudo);
+    font-size: 6.7em;
+    line-height: 0.7;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+#t3{
+    font-family: var(--font-conteudo);
+    font-size: 2.7em;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+#descricao{
+    font-family: var(--font-2);
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+    max-width: 515px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+#botao{
+    font-family: var(--font-2);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+}
+
+.icones-social{
+   width: 50px; 
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: flex-end;
+   align-items: center;
+}
+.icones-social a:hover{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 3px; 
+}
+#youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+footer{
+    text-align: center;
+    font-family: var(--font-2);
+    color: white;
+}
+@media(max-width:798px){
+    .icones-social{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+}
+@media(max-width:699px){
+    body{
+        padding: 0px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    main{
+        height:460px;
+    }
+    #descricao{
+        display: none;
+    }
+    #t1{
+        text-align: left;
+        font-size: 2em;
+    }
+    #t2{
+        font-size: 5.6em;
+    }
+    #t3{
+        font-size: 2.3em;
+    }
+    #botao{
+        width: 350px;
+        height: 90px;
+        font-size: 1.5em;
+    }
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
